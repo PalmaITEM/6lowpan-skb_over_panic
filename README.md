@@ -29,5 +29,6 @@ or simply:
 
     ip netns exec wpan0 "python ./send_udp_packet.py"
 
-## Screenshot from a VM where the error was reproduced:
+## Kernel dump screenshot:
 
+![Kernel Dump](https://github.com/PalmaITEM/6lowpan-skb_over_panic/raw/master/6lowpanic.png)
