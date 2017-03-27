@@ -1,3 +1,6 @@
+fakelb 16384 0 - Live 0xffffffffa0542000
+mac802154 65536 1 fakelb, Live 0xffffffffa0708000
+ieee802154 86016 1 mac802154, Live 0xffffffffa06eb000
 cfg80211 524288 0 - Live 0xffffffffa0aeb000
 nfnetlink_queue 24576 0 - Live 0xffffffffa0560000
 nfnetlink_log 20480 0 - Live 0xffffffffa0533000
