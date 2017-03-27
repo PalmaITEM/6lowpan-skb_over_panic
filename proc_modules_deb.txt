@@ -1,3 +1,7 @@
+fakelb 16384 0 - Live 0xffffffffc079e000
+mac802154 73728 1 fakelb, Live 0xffffffffc0905000
+ieee802154 81920 1 mac802154, Live 0xffffffffc08e7000
+crc_ccitt 16384 1 mac802154, Live 0xffffffffc070f000
 nfsd 327680 2 - Live 0xffffffffc0896000
 auth_rpcgss 61440 1 nfsd, Live 0xffffffffc07e0000
 nfs_acl 16384 1 nfsd, Live 0xffffffffc070a000
