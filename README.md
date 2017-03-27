@@ -5,7 +5,7 @@ Verified with the following kernels:
 * 4.10.4-1-ARCH (archlinux)
 * 4.9.0-0.bpo.2-amd64 (debian)
 
-**Note:** could not reproduce it in on a raspberrypi with 4.11.y built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.11.y)
+**Note:** could not reproduce it in on a Raspberry Pi with kernel 4.11.y built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.11.y)
 
 ## Setup WPAN network with two interfaces
 
