@@ -2,8 +2,8 @@
 Steps to reproduce "skb_over_panic" kernel panic when sending a simple UDP packet over a 6lowpan interface (using fakelb).
 
 Verified with the following kernels:
-* 4.10.4-1-ARCH (archlinux)
-* 4.9.0-0.bpo.2-amd64 (debian)
+* Linux version 4.9.0-0.bpo.2-amd64 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27)
+* Linux version 4.10.4-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Sat Mar 18 19:39:18 CET 2017
 
 **Note:** could not reproduce it in on a Raspberry Pi with kernel 4.11.y built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.11.y)
 
