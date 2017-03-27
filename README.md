@@ -32,3 +32,9 @@ or simply:
 ## Kernel dump screenshot:
 
 ![Kernel Dump](https://github.com/PalmaITEM/6lowpan-skb_over_panic/raw/master/6lowpanic.png)
+
+## Odd note (MAC CTRL packets)
+
+I can't explain this but, when SSHing real hardware and making it fail with the above setup, connectivity is lost on all machines connected to the same hub. Looking deeper into the matter, a tcpdump revealed the generation of MAC CTRL packets looking like this:
+
+    [no.]	[time]	[source]	Spanning-tree-(for-bridges)_01	MAC CTRL	60	Pause: pause_time: 65535 quanta
