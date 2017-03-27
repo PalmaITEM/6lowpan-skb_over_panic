@@ -13,8 +13,7 @@ panid="0xbeef"
 # number of nodes
 numnodes=2
 
-# include the kernel module for a fake node, tell it to create six
-# nodes
+# include the kernel module for a fake node, tell it to create 2 nodes
 rmmod fakelb
 modprobe fakelb numlbs=$numnodes
 
@@ -35,7 +34,7 @@ do
     ip netns exec wpan${i} ip link add link wpan${i} name lowpan${i} type lowpan
     ip netns exec wpan${i} ip link set wpan${i} up
     ip netns exec wpan${i} ip link set lowpan${i} up
-    #should actually use something link fd00::$(( i + 1 ))/8
+    #should actually use something like fd00::$(( i + 1 ))/8
     ip netns exec wpan${i} ip a a b:1::$(( i + 1 ))/64 dev lowpan${i}
 
     echo "wpan${i} --> lowpan{$i} --> b:1::$(( i + 1 ))/64"
