@@ -24,6 +24,14 @@ This script will try to remove the fakelb module, load it with two lbs (wpan0 an
 
     ./test_ping b:1::1 (or b:1::2)
 
+## Trigger skb_over_panic with a ping
+
+    ip netns exec wpan0 ping6 -s 39 b:1::2
+    
+or
+
+    ip netns exec wpan1 ping6 -s 39 b:1::1
+    
 ## Send UDP packet to trigger skb_over_panic
 
 This command should be run by a user with permissions to manage namespaces, but the actual sending of the UDP packets does not require any special privileges:
