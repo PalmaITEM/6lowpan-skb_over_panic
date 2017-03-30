@@ -11,7 +11,8 @@ Verified with the following kernels:
 Works fine on Debian with the following kernel:
 * Linux version 4.9.0-0.bpo.2-686 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27)
 
-Works fine on a Raspberry Pi 3 running alarm with any of the following kernels:
+Works fine on a Raspberry Pi 3, running Arch Linux ARM (32&64bit), with any of the following kernels:
+* Linux version 4.10.6-1-ARCH (builduser@leming) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP Sun Mar 26 15:42:21 MDT 2017 *(aarch64)*
 * 4.9.17-1-ARCH (from alarm repositories)
 * 4.10.5-v7+ built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.10.y)
 * 4.11.0-rc3-v7+ built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.11.y)
