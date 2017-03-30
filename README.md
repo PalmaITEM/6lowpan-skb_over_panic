@@ -6,7 +6,12 @@ Verified with the following kernels:
 * Linux version 4.10.4-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Sat Mar 18 19:39:18 CET 2017
 * Linux version 4.10.5-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Wed Mar 22 14:42:03 CET 2017
 
-**Note:** Could not reproduce it on a Raspberry Pi 3 running alarm with any of the following kernels:
+**Note:** Could not reproduce it with 32-bit architectures!
+
+Works fine on Debian with the following kernel:
+* Linux version 4.9.0-0.bpo.2-686 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27)
+
+Works fine on a Raspberry Pi 3 running alarm with any of the following kernels:
 * 4.9.17-1-ARCH (from alarm repositories)
 * 4.10.5-v7+ built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.10.y)
 * 4.11.0-rc3-v7+ built from source (using https://github.com/raspberrypi/linux/tree/rpi-4.11.y)
