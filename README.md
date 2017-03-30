@@ -2,14 +2,14 @@
 Steps to reproduce "skb_over_panic" kernel panic when sending a simple UDP packet over a 6lowpan interface (using fakelb).
 
 Verified with the following kernels:
-* Linux version 4.9.0-0.bpo.2-amd64 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27)
-* Linux version 4.10.4-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Sat Mar 18 19:39:18 CET 2017
-* Linux version 4.10.5-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Wed Mar 22 14:42:03 CET 2017
+* Linux version 4.9.0-0.bpo.2-amd64 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27) *(x86_64)*
+* Linux version 4.10.4-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Sat Mar 18 19:39:18 CET 2017 *(x86_64)*
+* Linux version 4.10.5-1-ARCH (builduser@tobias) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Wed Mar 22 14:42:03 CET 2017 *(x86_64)*
 
 **Note: Could not reproduce it with 32-bit architectures!**
 
 Works fine on Debian with the following kernel:
-* Linux version 4.9.0-0.bpo.2-686 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27)
+* Linux version 4.9.0-0.bpo.2-686 (debian-kernel@lists.debian.org) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Debian 4.9.13-1~bpo8+1 (2017-02-27) *(i686)*
 
 Works fine on a Raspberry Pi 3, running Arch Linux ARM (32&64bit), with any of the following kernels:
 * Linux version 4.10.6-1-ARCH (builduser@leming) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP Sun Mar 26 15:42:21 MDT 2017 *(aarch64)*
