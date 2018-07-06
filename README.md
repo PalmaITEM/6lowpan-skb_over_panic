@@ -1,3 +1,11 @@
+# Fix available!
+
+[Alexander Aring](https://github.com/alexaring) created two patches that fix this problem.
+
+Details can be found here:
+- https://bugzilla.kernel.org/show_bug.cgi?id=195059
+
+
 # 6lowpan-skb_over_panic
 Steps to reproduce "skb_over_panic" kernel panic when sending a simple UDP packet over a 6lowpan interface (using fakelb).
 
